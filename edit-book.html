@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bulma.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <title>Bulma | Edit Book</title>
+  </head>
+  <body>
+    <!-- NavBar goes here -->
+    <nav class="navbar has-shadow">
+      <div class="navbar-brand">
+        <a href="" class="navbar-item">
+          <img src="logo.png" alt="">
+        </a>
+        <div class="navbar-burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <div class="navbar-menu">
+        
+        <div class="navbar-start">
+          <div class="navbar-item">
+            <small>The Frontier for Education</small>
+          </div>
+        </div>
+
+        <div class="navbar-end">
+          
+          <div class="navbar-item has-dropdown is-hoverable">
+            
+            <div class="navbar-link">
+              Drame Success
+            </div>
+
+            <div class="navbar-dropdown ">
+              <a class="navbar-item">
+                <div>
+                  <span class="icon is-small">
+                    <i class="fa fa-user-circle"> </i>
+                  </span>
+                  Profile
+                </div>
+              </a>
+
+              <a class="navbar-item">
+                <div>
+                  <span class="icon is-small">
+                    <i class="fa fa-bug"> </i>
+                  </span>
+                  Report bug
+                </div>
+              </a>
+
+              <a class="navbar-item">
+                <div>
+                  <span class="icon is-small">
+                    <i class="fa fa-sign-out-alt"> </i>
+                  </span>
+                  Sign Out
+                </div>
+              </a>
+            </div>
+            
+
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- page section -->
+    <section class="section">
+      <div class="columns ">
+        <!-- sidebar goes here -->
+        <div class="column is-4-tablet is-3-desktop is-2-widescreen">
+          <!-- sidebar nav menu -->
+          <nav class="menu">
+            <p class="menu-label">
+              Menu
+            </p>
+
+            <ul class="menu-list">
+
+              <li>
+                <a href="dashboard.html">
+                  <span class="icon">
+                    <i class="fa fa-tachometer-alt"></i>
+                  </span>
+                  Dashboard
+                </a>
+              </li>
+
+              <li>
+                <a class="is-active" href="books.html">
+                  <span class="icon">
+                    <i class="fa fa-book"></i>
+                  </span>
+                  Books
+                </a>
+              </li>
+
+              <li>
+                <a  href="customers.html">
+                  <span class="icon">
+                    <i class="fa fa-address-book"></i>
+                  </span>
+                  Customers
+                </a>
+              </li>
+
+              <li>
+                <a href="orders.html">
+                  <span class="icon">
+                    <i class="fa fa-file-alt"></i>
+                  </span>
+                  Orders
+                </a>
+              </li>
+
+            </ul>
+          </nav>
+        </div>
+
+        <!-- right side goes here -->
+        <div class="column">
+          <nav class="breadcrumb">
+            <ul>
+              <li>
+                <a href="books.html">Books</a>
+            </li>
+            <li class="is-active">
+              <a href="edit-book.html">Edit book</a>
+            </li>
+          </ul>
+          </nav>
+
+          <form action="#">
+            <div class="field">
+              <div class="field">
+                <label for="title" class="label">Title</label>
+                <div class="control">
+                  <input type="text" class="input is-large" placeholder="Designing with Bulma" value="Schoolville Limited" required>
+                </div>
+              </div>
+              <!-- checking -->
+              <div class="columns is-desktop">
+                <div class="column">
+                  <label for="price" class="label">Price</label>
+                  <div class="control has-icons-left">
+                    <input type="number" class="input" placeholder="e.g $22.99" value="22.99">
+                    <span class="icon is-small is-left">
+                      <i class="fa fa-dollar-sign"></i>
+                    </span>
+                  </div>
+                </div>
+                <div class="column">
+                  <label for="pages" class="label">Pages</label>
+                  <div class="control">
+                    <input type="number" class="input" placeholder="e.g 270" value="270" required>
+                  </div>
+                </div>
+                <div class="column">
+                  <label for="isbn" class="label">ISBN</label>
+                  <div class="control">
+                    <input type="text" class="input" placeholder="e.g 8998987981687" value="8998987981687" required>
+                  </div>
+                </div>
+
+              </div>
+              <div class="field">
+                  <label for="img_upload" class="label">Cover Image</label>
+                  <div class="control">
+                    <div class="file has-name">
+                      <label for="" class="file-label">
+                        <input class="file-input" type="file">
+                        <span class="file-cta">
+                          <span class="file-icon">
+                            <i class="fa fa-upload"></i>
+                          </span>
+                          <span class="file-label">
+                            Choose a file...
+                          </span>
+                        </span>
+                        <span class="file-name">
+                          No file chosen
+                        </span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="field">
+                  <div class="buttons">
+                    <button class="button is-medium is-success">Create book</button>
+                    <button class="button is-medium is-light">Cancel</button>
+                  </div>
+                </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
